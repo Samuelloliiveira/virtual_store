@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    background: #fffafa;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* ----- HEADER ----- */
+header {
+    background-color: #880896;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.div-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4rem;
+}
+
+.div-header a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    
+}
+
+.div-header img {
+    width: 2rem;
+}
+
+
+/* ----- SEARCH ----- */
+#search {
+    padding-top: 9rem;
+    text-align: center;
+}
+
+#search input, button {
+    padding: 0.7rem;
+    border-radius: 0.2rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#search input {
+    width: 14rem;
+    outline: none;
+    border: 1px solid gray;
+    margin-bottom: 1rem;
+    color: #345;
+}
+
+#search button {
+    background: #880896;
+    color: white;
+    border: none;
+}
+
+#search button:hover {
+    background: #af35b5;
+}
+
+/* ----- PRODUCTS ----- */
+#products {
+    padding-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.card {
+    width: 16rem;
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.13);
+    border-radius: 0.4rem;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+.card:hover{
+    transform:scale(1.10,1.10);
+}
+
+.card img {
+    max-width: 13.9rem;
+    max-height: 21.75rem;
+    border-radius: 0.4rem;
+}
+
+.price {
+    color: #880896;
+}
+
+.card h2, .card p {
+    color: #345;
+}
+
+/* ----- FOOTER ----- */
+footer {
+    background-color: #880896;
+    width: 100%;
+    margin-top: 5rem;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* ------ MEDIA QUERIES  ------ */
+@media (max-width: 480px) {
+
+    #products {
+        gap: 0.8rem;
+    }
+
+    .card {
+        width: 14rem;
+    }
+
+    .card img {
+        max-height: 17.75rem;
+    }
+}
+
+@media (min-width: 480px) {
+    #search input {
+        width: 20rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .div-header {
+        margin: 0 1rem 0 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        margin: 0 2rem 0 2rem;
+    }
+}
