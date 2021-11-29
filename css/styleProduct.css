@@ -136,6 +136,7 @@ https://codepen.io/sosuke/pen/Pjoqqp */
 
     #suggestion .card h2{
         font-size: 1.4rem;
+        margin: 0.8rem 0;
     }
 
     #suggestion .card p{
