@@ -10,21 +10,25 @@ html {
     background: #fffafa;
 }
 
-body {
+main {
+    flex: 1 0 auto;
+}
+
+.wrap {
     display: flex;
     flex-direction: column;
     position: absolute;
     height: 100%;
-    width: 100%;
 }
 
-main {
-    flex: 1 0 auto;
+.container {
+
 }
 
 /* ----- HEADER ----- */
 header {
     background-color: #880896;
+    box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.54);
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -109,7 +113,7 @@ header {
     border-radius: 0.4rem;
 }
 
-.price {
+.card .price, #info .price {
     color: #880896;
 }
 
@@ -131,6 +135,10 @@ footer {
 /* ------ MEDIA QUERIES  ------ */
 @media (max-width: 480px) {
 
+    #search input {
+        width: 16rem;
+    }
+
     #products {
         gap: 0.8rem;
     }
@@ -141,12 +149,16 @@ footer {
 
     .card img {
         max-height: 17.75rem;
-    }
+    }    
 }
 
-@media (min-width: 480px) {
+@media (min-width: 320px) {
     #search input {
-        width: 20rem;
+        width: 18rem;
+    }
+    
+    .wrap {
+        width: 100%;
     }
 }
 
@@ -157,7 +169,7 @@ footer {
 }
 
 @media (min-width: 992px) {
-    .container {
+    .div-header {
         margin: 0 2rem 0 2rem;
     }
 }
