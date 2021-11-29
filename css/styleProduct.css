@@ -1,4 +1,4 @@
-#product {
+#product, #suggestions {
     padding-top: 9rem;
     display: flex;
     flex-direction: column;
@@ -65,10 +65,50 @@
 
 }
 
+/* --------SUGGESTIONs--------- */
+#suggestions {
+    margin-top: 5rem;
+    padding-top: 0;
+}
+
+#suggestions h2 {
+    font-weight: normal;
+    margin: 1rem 0 1rem
+}
+
+#suggestions img {
+    margin-bottom: 0.8rem;
+}
+
+#suggestion ul {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+}
+
 /* ------ MEDIA QUERIES  ------ */
 @media (min-width: 600px) {
     #product {
         flex-direction: row;
+    }
+
+    #suggestion .card {
+        width: 11rem;
+    }
+
+    #suggestion .card img {
+        max-height: 13.4rem;
+    }
+
+    #suggestion .card h2{
+        font-size: 1.4rem;
+    }
+
+    #suggestion .card p{
+        font-size: 1rem;
     }
 }
 

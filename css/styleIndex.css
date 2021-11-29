@@ -21,10 +21,6 @@ main {
     height: 100%;
 }
 
-.container {
-
-}
-
 /* ----- HEADER ----- */
 header {
     background-color: #880896;
@@ -111,6 +107,7 @@ header {
     max-width: 13.9rem;
     max-height: 21.75rem;
     border-radius: 0.4rem;
+    margin-bottom: 0.8rem;
 }
 
 .card .price, #info .price {
@@ -119,6 +116,7 @@ header {
 
 .card h2, .card p {
     color: #345;
+    margin: 1rem 0 1rem;
 }
 
 /* ----- FOOTER ----- */
@@ -133,6 +131,16 @@ footer {
 }
 
 /* ------ MEDIA QUERIES  ------ */
+@media (min-width: 320px) {
+    #search input {
+        width: 18rem;
+    }
+    
+    .wrap {
+        width: 100%;
+    }
+}
+
 @media (max-width: 480px) {
 
     #search input {
@@ -144,21 +152,37 @@ footer {
     }
 
     .card {
-        width: 14rem;
+        width: 7rem;
     }
 
     .card img {
-        max-height: 17.75rem;
-    }    
-}
-
-@media (min-width: 320px) {
-    #search input {
-        width: 18rem;
+        max-height: 7.75rem;
     }
     
-    .wrap {
-        width: 100%;
+    .card h2{
+        font-size: 1rem;
+    }
+
+    .card p{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 537px) {
+    .card {
+        width: 11rem;
+    }
+
+    .card img {
+        max-height: 13.5rem;
+    }
+    
+    .card h2{
+        font-size: 1.3rem;
+    }
+
+    .card p{
+        font-size: 1rem;
     }
 }
 
