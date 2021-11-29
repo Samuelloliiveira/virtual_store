@@ -149,6 +149,16 @@ footer {
     }
 }
 
+@media (min-width: 320px) {
+    .card {
+        width: 10rem;
+    }
+
+    .card img {
+        max-height: 11.7rem;
+    }
+}
+
 @media (min-width: 537px) {
     .card {
         width: 11rem;
