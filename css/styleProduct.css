@@ -67,17 +67,42 @@
 
 /* --------SUGGESTIONs--------- */
 #suggestions {
-    margin-top: 5rem;
+    margin-top: 5.5rem;
     padding-top: 0;
 }
 
-#suggestions h2 {
-    font-weight: normal;
-    margin: 1rem 0 1rem
+#text-suggest {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-#suggestions img {
-    margin-bottom: 0.8rem;
+#text-suggest h2 {
+    font-weight: normal;
+}
+
+#text-suggest p {
+    font-size: 3rem;
+}
+
+#suggestions {
+    margin-bottom: 5rem;
+}
+
+/* filtrando a cor do svg usando o codepen: 
+https://codepen.io/sosuke/pen/Pjoqqp */
+#arrow-svg {
+    filter: 
+        invert(10%) 
+        sepia(75%) 
+        saturate(5230%) 
+        hue-rotate(289deg) 
+        brightness(105%) 
+        contrast(104%);
+}
+
+#suggestion {
+    margin-top: 3rem;
 }
 
 #suggestion ul {
@@ -90,6 +115,12 @@
 }
 
 /* ------ MEDIA QUERIES  ------ */
+@media (max-width: 537px) {
+    #text-suggest h2 {
+        font-size: 1.3rem;
+    }
+}
+
 @media (min-width: 600px) {
     #product {
         flex-direction: row;
