@@ -10,22 +10,23 @@ html {
 }
 
 body {
-    /* background: #fffafa; */
-    /* background-image: url("../img/4860404.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .wrap {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    height: 100%;
+    min-height: 100vh;
+    background-image: url("../img/4860404.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-main {
-    flex: 1 0 auto;
+/* deixar o footer preso sempre no final */
+.wrap main {
+    flex: 1;
 }
 
 /* ----- HEADER ----- */
@@ -33,7 +34,7 @@ header {
     background-color: #880896;
     box-shadow: 0 4px 8px rgb(30 60 90 / 30%);
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 1;
 }
 
@@ -152,7 +153,6 @@ footer {
     padding: 1rem;
     color: white;
     text-align: center;
-    flex-shrink: 0;
 }
 
 footer a {
@@ -165,7 +165,7 @@ footer a {
     #search input {
         width: 18rem;
     }
-    
+
     .wrap {
         width: 100%;
     }
@@ -177,10 +177,16 @@ footer a {
     }        
 }
 
-@media (min-width: 992px) {
+@media (min-width: 959px) {
     .div-header {
         margin: 0 2rem 0 2rem;
     }
+
+    #products {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    
 }
 
 @media (min-width: 1264px) {
