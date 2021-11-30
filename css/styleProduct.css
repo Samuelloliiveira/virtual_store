@@ -107,10 +107,9 @@ https://codepen.io/sosuke/pen/Pjoqqp */
 
 #suggestion ul {
     display: flex;
-    display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
     list-style: none;
 }
 
@@ -147,5 +146,9 @@ https://codepen.io/sosuke/pen/Pjoqqp */
 @media (min-width: 992px) {
     #product img {
         width: 20rem;
+    }
+
+    #suggestions {
+        margin: 5.5rem 8.5rem;
     }
 }
