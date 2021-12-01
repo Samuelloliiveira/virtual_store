@@ -15,10 +15,10 @@ html {
 
 body {
     display: flex;
-    /* background-image: url("../img/4853433.jpg");
+    background-image: url("../img/4853433.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-     */
+    
 }
 
 .wrap {
@@ -130,6 +130,8 @@ header {
     max-height: 17.5rem;
     border-radius: 0.4rem;
     margin-bottom: 0.8rem;
+    width: auto;
+    height: auto;
 }
 
 .card .price,
