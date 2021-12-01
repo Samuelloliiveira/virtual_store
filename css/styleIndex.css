@@ -5,23 +5,26 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-color: #880896;
+}
+
 html {
     font-family: 'Poppins', sans-serif;
 }
 
 body {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-image: url("../img/4853433.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 
 .wrap {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url("../img/4860404.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 /* deixar o footer preso sempre no final */
@@ -31,10 +34,10 @@ body {
 
 /* ----- HEADER ----- */
 header {
-    background-color: #880896;
+    background-color: var(--main-color);
     box-shadow: 0 4px 8px rgb(30 60 90 / 30%);
     position: fixed;
-    width: 100vw;
+    width: 100%;
     z-index: 1;
 }
 
@@ -91,7 +94,7 @@ header {
 }
 
 #search button {
-    background: #880896;
+    background: var(--main-color);
     color: white;
     border: none;
 }
@@ -120,7 +123,7 @@ header {
 }
 
 .card:hover{
-    transform:scale(1.10,1.10);
+    transform:scale(1.10,1.10)!important
 }
 
 .card img {
@@ -129,8 +132,9 @@ header {
     margin-bottom: 0.8rem;
 }
 
-.card .price {
-    color: #880896;
+.card .price,
+#info .price {
+    color: var(--main-color);
 }
 
 .card h2{
@@ -141,13 +145,16 @@ header {
     font-size: 1rem;
 }
 
-.card h2, .card p {
+.card h2,
+.card p, 
+#info,
+#text-suggest h2{
     color: #345;
 }
 
 /* ----- FOOTER ----- */
 footer {
-    background-color: #880896;
+    background-color: var(--main-color);
     width: 100%;
     margin-top: 5rem;
     padding: 1rem;
