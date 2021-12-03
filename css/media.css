@@ -23,7 +23,7 @@
 
 @media (min-width: 600px) {
 
-    #suggestion .card img, .cart img {
+    #suggestion .card img {
         max-height: 13.4rem;
         width: auto;
     }

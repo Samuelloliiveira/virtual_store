@@ -33,6 +33,34 @@ body {
     flex: 1;
 }
 
+.label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.button {
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0.2rem;
+    text-align: center;
+    font-size: 1rem;
+
+    background: var(--main-color);
+    color: white;
+    box-shadow: 0 4px 8px rgb(30 60 90 / 15%);
+}
+
+.button:hover {
+    background: #af35b5;
+}
+
 /* ----- HEADER ----- */
 header {
     background-color: var(--main-color);
@@ -86,7 +114,8 @@ header {
 }
 
 .card .price,
-#info .price {
+#info .price,
+#cart-text .price {
     color: var(--main-color);
 }
 
@@ -106,7 +135,8 @@ header {
 .card h2,
 .card p, 
 #info,
-#text-suggest h2{
+#text-suggest h2,
+.cart{
     color: #345;
 }
 

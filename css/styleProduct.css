@@ -49,26 +49,23 @@
     height: 1.8rem;
 }
 
-#button {
+#info-button {
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
 
-#button button:first-child {
-    background: green;
+#info-button button:first-child {
+    background: #188535;
 }
 
-#button button {
-    background: var(--main-color);
-    color: white;
-    border: none;
-    padding: 0.4rem;
-    text-align: center;
-    cursor: pointer;
-    width: 7rem;
-    height: 3rem;
+#info-button button:first-child:hover{
+    background-color: #24ad49;
+}
 
+#info-button button {
+    width: 7rem;
+    height: auto;
 }
 
 /* --------SUGGESTIONs--------- */
