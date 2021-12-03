@@ -7,6 +7,9 @@ const scrollReveal = ScrollReveal({
   
   })
   
-  scrollReveal.reveal(`.card, #search, #info div `, {interval: 100}
+  scrollReveal.reveal(`
+    .card, #search, #info div, 
+    #text-suggest, #arrow-svg `
+    , {interval: 100}
   )
   

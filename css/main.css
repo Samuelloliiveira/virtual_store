@@ -1,0 +1,130 @@
+/* ----- CONFIGURAÇÃO ----- */
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #880896;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    background-image: url("../img/4853433.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* deixar o footer preso sempre no final */
+.wrap main {
+    flex: 1;
+}
+
+/* ----- HEADER ----- */
+header {
+    background-color: var(--main-color);
+    box-shadow: 0 4px 8px rgb(30 60 90 / 30%);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.div-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.div-header a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.div-header img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.card {
+    width: 14rem;
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.13);
+    border-radius: 0.4rem;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: white;
+    margin-bottom: 2.6rem;
+
+    text-align: center;
+}
+
+/* ----- CARD ----- */
+.card:hover{
+    transform:scale(1.10,1.10)!important
+}
+
+.card img {
+    width: auto;
+    max-height: 17.5rem;
+    border-radius: 0.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.card .price,
+#info .price {
+    color: var(--main-color);
+}
+
+.card h2, p {
+    text-align: left;
+}
+
+.card h2{
+    font-size: 1.3rem;
+    margin: 0.8rem 0;
+}
+
+.card p{
+    font-size: 1rem;
+}
+
+.card h2,
+.card p, 
+#info,
+#text-suggest h2{
+    color: #345;
+}
+
+/* ----- FOOTER ----- */
+footer {
+    background-color: var(--main-color);
+    width: 100%;
+    margin-top: 5rem;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
