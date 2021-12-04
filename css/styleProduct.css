@@ -26,27 +26,11 @@
 }
 
 .quantity {
-    margin: 0;
     display: flex;
     gap: 0.6rem;
     align-items: center;
     justify-content: center;
     margin: 1rem 0;
-}
-
-.quantity select {
-    -webkit-appearance: none;
-    flex: 1;
-    background: white;
-    text-align: center;
-}
-
-.select {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    width: 3rem;
-    height: 1.8rem;
 }
 
 #info-button {

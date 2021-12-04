@@ -12,7 +12,15 @@
 @media (min-width: 480px) {
     .div-header #user {
         margin-right: 6rem;
-    }        
+    }
+    
+    .cart {
+        font-size: 1rem;
+    }
+
+    #cart-img img {
+        max-height: 9.4rem;
+    }
 }
 
 @media (max-width: 537px) {
@@ -57,7 +65,28 @@
         margin-left: 4rem;
         margin-right: 4rem;
     }
+
+    #productsInCart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart {
+        width: 52.5rem;
+        padding: 0.7rem;
+        gap: 1.4rem;
+    }
+
+    #cart-img {
+        gap: 1rem;
+    }
     
+    #cart-img input[type="checkbox"] {
+        cursor: pointer;
+        width: 1.25rem;
+        height: 1.25rem;
+    }
 }
 
 @media (min-width: 992px) {
