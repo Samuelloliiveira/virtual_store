@@ -15,4 +15,6 @@ Google Fonts,
 ScrollRevel, <br>
 
 ## <br><br>
-![index_imagem]()
+![index_imagem](https://github.com/Samuelloliiveira/virtual_store/blob/main/img/img-project/index.jpg?raw=true)
+![index_imagem](https://github.com/Samuelloliiveira/virtual_store/blob/main/img/img-project/product.jpg?raw=true)
+![index_imagem](https://github.com/Samuelloliiveira/virtual_store/blob/main/img/img-project/cart.jpg?raw=true)
