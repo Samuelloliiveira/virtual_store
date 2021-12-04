@@ -9,7 +9,8 @@ const scrollReveal = ScrollReveal({
   
   scrollReveal.reveal(`
     .card, #search, #info div, 
-    #text-suggest, #arrow-svg `
+    #text-suggest, #arrow-svg,
+    #closeOrder, .cart `
     , {interval: 100}
   )
   
